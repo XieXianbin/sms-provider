@@ -5,6 +5,7 @@ import (
 	"strings"
 
 	"github.com/XieXianbin/sms-provider/config"
+	"github.com/XieXianbin/sms-provider/sms/alidayu"
 	"github.com/toolkits/web/param"
 )
 
@@ -19,16 +20,27 @@ func configProcRoutes() {
 		}
 
 		tos := param.MustString(r, "tos")
-		subject := param.MustString(r, "subject")
 		content := param.MustString(r, "content")
 		tos = strings.Replace(tos, ",", ";", -1)
 
-		s := smtp.New(cfg.Smtp.Addr, cfg.Smtp.Username, cfg.Smtp.Password)
-		err := s.SendMail(cfg.Smtp.From, tos, subject, content)
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
-		} else {
+		provider := cfg.Sms.Provider
+
+		moblieList := strings.Split(tos, ",")
+		h := int(len(moblieList) / 200)
+		result := make([]*alidayu.Result, 0, h)
+
+		switch provider {
+		case "alidayu":
+			sms_param := []string{"{\"content\": \"", content, "\"}"}
+			param := strings.Join(sms_param, "")
+			result, _ = alidayu.SendBatch(tos, cfg.Sms.Smsfreesignname, cfg.Sms.Smstemplatecode, param)
+		}
+
+		if result != nil {
 			http.Error(w, "success", http.StatusOK)
+		} else {
+//			http.Error(w, result, http.StatusInternalServerError)
+			http.Error(w, "error", http.StatusInternalServerError)
 		}
 	})
 

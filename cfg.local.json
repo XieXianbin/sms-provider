@@ -1,10 +1,14 @@
 {
-    "debug": true,
-    "http": {
-        "listen": "0.0.0.0:8008"
-    },
-    "alidayu": {
-        "appkey": "xxxxxxxxxx",
-        "appsecret": "xxxxxxxxxxxxxxxxxxxxxxxxx"
-    }
+	"debug": true,
+	"http": {
+		"listen": "0.0.0.0:8008",
+		"token": ""
+	},
+	"sms": {
+	    "provider": "alidayu",
+		"appkey": "xxxxxxxxxx",
+		"appsecret": "xxxxxxxxxxxxxxxxxxxxxxxxx",
+		"smstemplatecode": "",
+		"smsfreesignname": ""
+	}
 }

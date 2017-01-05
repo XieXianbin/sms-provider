@@ -14,17 +14,18 @@ type HttpConfig struct {
 	Token  string `json:"token"`
 }
 
-type SmtpConfig struct {
-	Addr     string `json:"addr"`
-	Username string `json:"username"`
-	Password string `json:"password"`
-	From     string `json:"from"`
+type SmsConfig struct {
+	Provider        string `json:"provider"`
+	Appkey          string `json:"appkey"`
+	Appsecret       string `json:"appsecret"`
+	Smstemplatecode string `json:"smstemplatecode"`
+	Smsfreesignname string `json:"smsfreesignname"`
 }
 
 type GlobalConfig struct {
 	Debug bool        `json:"debug"`
 	Http  *HttpConfig `json:"http"`
-	Smtp  *SmtpConfig `json:"smtp"`
+	Sms   *SmsConfig  `json:"sms"`
 }
 
 var (
