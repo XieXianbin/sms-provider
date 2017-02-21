@@ -1,0 +1,21 @@
+{
+	"debug": true,
+	"http": {
+		"listen": "0.0.0.0:8008",
+		"token": ""
+	},
+	"sms": {
+	    "provider": "alidayu",
+		"appkey": "23589572",
+		"appsecret": "b0660bff18a63f6e3c57b5ecd9766cec",
+		"smstemplatecode": "SMS_48695032",
+		"smsfreesignname": ""
+	},
+	"smtp": {
+        "addr": "smtp.ym.163.com:25",
+        "username": "8@jcloud.xyz",
+        "password": "WRDwrd3e",
+        "from": "8@jcloud.xyz"
+	}
+
+}

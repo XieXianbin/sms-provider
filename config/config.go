@@ -22,10 +22,18 @@ type SmsConfig struct {
 	Smsfreesignname string `json:"smsfreesignname"`
 }
 
+type SmtpConfig struct {
+	Addr     string `json:"addr"`
+	Username string `json:"username"`
+	Password string `json:"password"`
+	From     string `json:"from"`
+}
+
 type GlobalConfig struct {
 	Debug bool        `json:"debug"`
 	Http  *HttpConfig `json:"http"`
 	Sms   *SmsConfig  `json:"sms"`
+	Smtp  *SmtpConfig `json:"smtp"`
 }
 
 var (

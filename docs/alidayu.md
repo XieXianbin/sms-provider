@@ -1,12 +1,12 @@
-# °¢Àï´óÓãapi½Ó¿Ú
+# é˜¿é‡Œå¤§é±¼apiæŽ¥å£
 
 ==================
 
-*É³Ïä»·¾³´æÔÚÎÊÌâ Òò´Ë´Ë¹¦ÄÜÏÐÖÃ*
+*æ²™ç®±çŽ¯å¢ƒå­˜åœ¨é—®é¢˜ å› æ­¤æ­¤åŠŸèƒ½é—²ç½®*
 
-µ÷ÓÃ·½·¨
+è°ƒç”¨æ–¹æ³•
 
-ÒýÓÃ°ü
+å¼•ç”¨åŒ…
 
 ```go
 import(
@@ -14,11 +14,11 @@ import(
   )
 ```
 
-³õÊ¼»¯º¯Êý
+åˆå§‹åŒ–å‡½æ•°
 
 
 ```go
-// ³õÊ¼»¯°¢ÀïÔÆ
+// åˆå§‹åŒ–é˜¿é‡Œäº‘
 
 alidayu.Appkey = "xxxxxxx"
 
@@ -27,81 +27,81 @@ alidayu.AppSecret = "xxxxxxxxxxxxxxxxxxxxxxxxx"
 alidayu.IsDebug = false
 ```
 
-## ¶ÌÐÅ½Ó¿Ú
+## çŸ­ä¿¡æŽ¥å£
 
-* SendOnce ¶ÌÐÅµ¥Ìõ·¢ËÍµÄ½Ó¿Ú
+* SendOnce çŸ­ä¿¡å•æ¡å‘é€çš„æŽ¥å£
 
->// moblie-ÊÖ»úºÅÂë
+>// moblie-æ‰‹æœºå·ç 
 
->// signname-¶ÌÐÅÇ©Ãû
+>// signname-çŸ­ä¿¡ç­¾å
 
->// templatecode-¶ÌÐÅÄ£°å
+>// templatecode-çŸ­ä¿¡æ¨¡æ¿
 
->// param-´«Èë²ÎÊý
+>// param-ä¼ å…¥å‚æ•°
 
->// ·µ»ØResult¸ñÊ½£¬ÇëÈ·±£Êä³ö³É¹¦Ê§°ÜµÄ½á¹¹ÌåÒýÓÃ£¬Èç¹ûResult.SuccessÎªtrueÔò»ñÈ¡Result.ResultError±¨´í
+>// è¿”å›žResultæ ¼å¼ï¼Œè¯·ç¡®ä¿è¾“å‡ºæˆåŠŸå¤±è´¥çš„ç»“æž„ä½“å¼•ç”¨ï¼Œå¦‚æžœResult.Successä¸ºtrueåˆ™èŽ·å–Result.ResultErroræŠ¥é”™
 
 ```go
-alidayu.SendOnce("136xxxxxxx8","²âÊÔ",¡°SM_777777¡±,"{'code':'666666'}")
+alidayu.SendOnce("136xxxxxxx8","æµ‹è¯•",â€œSM_777777â€,"{'code':'666666'}")
 ```
 
 ##  
 
-* SendBatch ¶ÌÐÅµ¥Ìõ·¢ËÍµÄ½Ó¿Ú
+* SendBatch çŸ­ä¿¡å•æ¡å‘é€çš„æŽ¥å£
 
->// moblie-ÊÖ»úºÅÂë ','¸ô¿ª
+>// moblie-æ‰‹æœºå·ç  ','éš”å¼€
 
->// signname-¶ÌÐÅÇ©Ãû
+>// signname-çŸ­ä¿¡ç­¾å
 
->// templatecode-¶ÌÐÅÄ£°å
+>// templatecode-çŸ­ä¿¡æ¨¡æ¿
 
->// param-´«Èë²ÎÊý
+>// param-ä¼ å…¥å‚æ•°
 
->// ·µ»ØResult¸ñÊ½£¬ÇëÈ·±£Êä³ö³É¹¦Ê§°ÜµÄ½á¹¹ÌåÒýÓÃ£¬Èç¹ûResult.SuccessÎªtrueÔò»ñÈ¡Result.ResultError±¨´í
-
-```go
-alidayu.SendBatch("136xxxxxxx8,136xxxxxxx3","²âÊÔ","SM_777777","{'code':'666666'}")
-```
-
-## ÎÄ±¾×ªÓïÒô½Ó¿Ú
-
-* SendLecall ÎÄ±¾×ªÓïÒôµÄ½Ó¿Ú
-
->// moblie-ÊÖ»úºÅÂë
-
->// templatecode-¶ÌÐÅÄ£°å
-
->// param-´«Èë²ÎÊý
-
->// ·µ»ØResult¸ñÊ½£¬ÇëÈ·±£Êä³ö³É¹¦Ê§°ÜµÄ½á¹¹ÌåÒýÓÃ£¬Èç¹ûResult.SuccessÎªtrueÔò»ñÈ¡Result.ResultError±¨´í
+>// è¿”å›žResultæ ¼å¼ï¼Œè¯·ç¡®ä¿è¾“å‡ºæˆåŠŸå¤±è´¥çš„ç»“æž„ä½“å¼•ç”¨ï¼Œå¦‚æžœResult.Successä¸ºtrueåˆ™èŽ·å–Result.ResultErroræŠ¥é”™
 
 ```go
-alidayu.SendLecall("136xxxxxxx8","TL_777777","{'code':¡®666666¡¯}")
+alidayu.SendBatch("136xxxxxxx8,136xxxxxxx3","æµ‹è¯•","SM_777777","{'code':'666666'}")
+```
+
+## æ–‡æœ¬è½¬è¯­éŸ³æŽ¥å£
+
+* SendLecall æ–‡æœ¬è½¬è¯­éŸ³çš„æŽ¥å£
+
+>// moblie-æ‰‹æœºå·ç 
+
+>// templatecode-çŸ­ä¿¡æ¨¡æ¿
+
+>// param-ä¼ å…¥å‚æ•°
+
+>// è¿”å›žResultæ ¼å¼ï¼Œè¯·ç¡®ä¿è¾“å‡ºæˆåŠŸå¤±è´¥çš„ç»“æž„ä½“å¼•ç”¨ï¼Œå¦‚æžœResult.Successä¸ºtrueåˆ™èŽ·å–Result.ResultErroræŠ¥é”™
+
+```go
+alidayu.SendLecall("136xxxxxxx8","TL_777777","{'code':â€˜666666â€™}")
 ```
 
 
-## ·µ»Ø¸ñÊ½
+## è¿”å›žæ ¼å¼
 
-·µ»Ø¸ñÊ½Ä¬ÈÏÎªmodel.goÏÂµÄResult¸ñÊ½
+è¿”å›žæ ¼å¼é»˜è®¤ä¸ºmodel.goä¸‹çš„Resultæ ¼å¼
 
-ÔÚÒýÓÃÊ±²»ÄÜÒýÓÃÎª¿ÕµÄ×Ó½á¹¹
+åœ¨å¼•ç”¨æ—¶ä¸èƒ½å¼•ç”¨ä¸ºç©ºçš„å­ç»“æž„
 
-ÀýÈçResult.Success==trueÊ±
+ä¾‹å¦‚Result.Success==trueæ—¶
 
-ÒýÓÃµ½Result.resultError»á±¨´í
+å¼•ç”¨åˆ°Result.resultErrorä¼šæŠ¥é”™
 
-## ¹ØÓÚmethodÀïµÄ·½·¨
+## å…³äºŽmethodé‡Œçš„æ–¹æ³•
 
-ÓïÒô×ªÎÄ×ÖµÄ·½Ê½Àï£¬»áÄ¬ÈÏ½«Êý×Ö¿É¶Á»¯
+è¯­éŸ³è½¬æ–‡å­—çš„æ–¹å¼é‡Œï¼Œä¼šé»˜è®¤å°†æ•°å­—å¯è¯»åŒ–
 
-ËùÒÔÈç¹ûÒª·¢ËÍÑéÖ¤Âë ÊÇÐèÒª½«Êý×ÖÓÃ¶ººÅ¸ô¿ª
+æ‰€ä»¥å¦‚æžœè¦å‘é€éªŒè¯ç  æ˜¯éœ€è¦å°†æ•°å­—ç”¨é€—å·éš”å¼€
 
-´ËÊ±¿ÉÒÔµ÷ÓÃSpritCode·½·¨
+æ­¤æ—¶å¯ä»¥è°ƒç”¨SpritCodeæ–¹æ³•
 
-Ëü»á½«ÊäÈë666666×ª»»Îª6,6,6,6,6,6
+å®ƒä¼šå°†è¾“å…¥666666è½¬æ¢ä¸º6,6,6,6,6,6
 
-·½±ãÓïÒô²¥·Å
+æ–¹ä¾¿è¯­éŸ³æ’­æ”¾
 
 ##  
 
-¼¼ÊõÀ´Ô´ÓÚÖÐÇ²»¥Áª£¬ÔÚ¿ª·¢Ê±½è¼øÁËÊý¸ö¿ªÔ´ÏîÄ¿¡£
+æŠ€æœ¯æ¥æºäºŽä¸­é£äº’è”ï¼Œåœ¨å¼€å‘æ—¶å€Ÿé‰´äº†æ•°ä¸ªå¼€æºé¡¹ç›®ã€‚

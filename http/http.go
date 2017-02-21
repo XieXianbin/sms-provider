@@ -22,6 +22,6 @@ func Start() {
 		Addr:           addr,
 		MaxHeaderBytes: 1 << 30,
 	}
-	log.Println("http listening", addr)
+	log.Println("http listening: ", addr)
 	log.Fatalln(s.ListenAndServe())
 }

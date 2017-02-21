@@ -1,4 +1,4 @@
-package sms-provider
+package test
 
 import (
 	"testing"

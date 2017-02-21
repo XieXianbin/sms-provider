@@ -1,10 +1,27 @@
 # sms-provider
 =============
 
-°Ñsmtp·â×°ÎªÒ»¸ö¼òµ¥http½Ó¿Ú£¬ÅäÖÃµ½falcon-senderÖĞÓÃÀ´·¢ËÍ±¨¾¯¶ÌĞÅ
+æŠŠsmtpå°è£…ä¸ºä¸€ä¸ªç®€å•httpæ¥å£ï¼Œé…ç½®åˆ°falcon-senderä¸­ç”¨æ¥å‘é€æŠ¥è­¦çŸ­ä¿¡
 
-## Ê¹ÓÃ·½·¨
+## ä½¿ç”¨æ–¹æ³•
+
+### SMS
 
 ```
-curl http://$ip:8008/sender/sms -d "tos=13523599999,1352358888&content=±¨¾¯ÄÚÈİ"
+curl http://$ip:8008/sender/sms -d "tos=13523599999,1352358888&content=æŠ¥è­¦å†…å®¹"
 ```
+
+http://127.0.0.1:8008/sender/sms?tos=13523591108&content=sms_content
+
+### EMAIL
+
+æŠŠsmtpå°è£…ä¸ºä¸€ä¸ªç®€å•httpæ¥å£ï¼Œé…ç½®åˆ°falcon-senderä¸­ç”¨æ¥å‘é€æŠ¥è­¦çŸ­ä¿¡,ä½¿ç”¨æ–¹æ³•:
+
+```
+curl http://$ip:8008/sender/mail -d "tos=me@xiexianbin.cn,10972062@qq.com&subject=demo_subject&content=email_content"
+```
+
+curl http://127.0.0.1:8008/sender/mail -d "tos=me@xiexianbin.cn,10972062@qq.com&subject=demo_subject&content=email_content"
+
+http://127.0.0.1:8008/sender/email?tos=me@xiexianbin.cn&subject=demo_subject&content=email_content
+

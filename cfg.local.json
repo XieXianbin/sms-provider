@@ -10,5 +10,11 @@
 		"appsecret": "xxxxxxxxxxxxxxxxxxxxxxxxx",
 		"smstemplatecode": "",
 		"smsfreesignname": ""
+	},
+	"smtp": {
+        "addr": "mail.xiexianbin.cn:25",
+        "username": "8@xiexianbin.cn",
+        "password": "123456",
+        "from": "8@xiexianbin.cn"
 	}
 }
