@@ -1,9 +1,7 @@
-# msg-provider
+## msg-provider
 =============
 
-把smtp封装为一个简单http接口，配置到falcon-sender中用来发送报警短信
-
-## 使用方法
+Open-Falcon 告警组件 -- 支持短信、邮件、微信告警。
 
 ### SMS
 
