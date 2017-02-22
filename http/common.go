@@ -3,7 +3,7 @@ package http
 import (
 	"net/http"
 
-	"github.com/XieXianbin/sms-provider/config"
+	"github.com/XieXianbin/msg-provider/config"
 )
 
 func configCommonRoutes() {

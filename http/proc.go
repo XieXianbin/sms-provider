@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/XieXianbin/sms-provider/config"
-	"github.com/XieXianbin/sms-provider/sms/alidayu"
-	"github.com/toolkits/smtp"
+	"github.com/XieXianbin/msg-provider/config"
+	"github.com/XieXianbin/msg-provider/sms/alidayu"
+	"github.com/XieXianbin/msg-provider/smtp"
 	"github.com/toolkits/web/param"
 )
 

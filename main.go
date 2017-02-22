@@ -7,8 +7,8 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/XieXianbin/sms-provider/config"
-	"github.com/XieXianbin/sms-provider/http"
+	"github.com/XieXianbin/msg-provider/config"
+	"github.com/XieXianbin/msg-provider/http"
 )
 
 func prepare() {

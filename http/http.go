@@ -5,7 +5,7 @@ import (
 	"net/http"
 	_ "net/http/pprof"
 
-	"github.com/XieXianbin/sms-provider/config"
+	"github.com/XieXianbin/msg-provider/config"
 )
 
 func init() {
