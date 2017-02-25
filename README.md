@@ -1,5 +1,7 @@
 ## msg-provider
 
+[![Build Status](https://travis-ci.com/XieXianbin/msg-provider.svg?token=sRCrvxUiass6RRvxpERy&branch=master)](https://travis-ci.com/XieXianbin/msg-provider)
+[![License](https://img.shields.io/badge/LICENSE-Apache2.0-ff69b4.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 =============
 
@@ -18,11 +20,7 @@ godoc -http=:8080
 短信模版
 
 ```
-告警内容：
-触发值：
-IP地址：
-所属团队：
-告警时间：
+用户${name},监控平台告警：${context}。
 ```
 
 ```
@@ -30,6 +28,10 @@ curl http://$ip:8008/sender/sms -d "tos=13523599999,1352358888&context=报警内
 ```
 
 http://127.0.0.1:8008/sender/sms?tos=13523591108&context=sms_content&name=test
+
+实示例：
+
+![](https://github.com/XieXianbin/msg-provider/raw/master/docs/img/sms.png)
 
 ### EMAIL
 
@@ -50,6 +52,11 @@ curl http://$ip:8008/sender/mail -d "tos=me@xiexianbin.cn,10972062@qq.com&subjec
 ```
 
 http://127.0.0.1:8008/sender/email?tos=me@xiexianbin.cn,10972072@qq.com&subject=demo_subject&content=email_content
+
+实示例：
+
+![](https://github.com/XieXianbin/msg-provider/raw/master/docs/img/mail.png)
+
 
 ### Wechat
 
@@ -135,6 +142,8 @@ curl http://$ip:8008/sender/wechat -d "tos=openid1,openid1&title=title_1&endpoin
 
 http://127.0.0.1:8008/sender/wechat?tos=oNvaVuH1Km6fGz3i8V2iHIR9aspk&title=title_1&endpoint=endpoint_1&metric=metric_1&tags=tags_1&reason=reason_1&max=max_1&current=current_1&note=note_1&timestamp=timestamp_1&remark=remark_1&url=http://openfalcon.xiexianbin.cn:5050/template/view/2
 
+实示例：
 
+![](https://github.com/XieXianbin/msg-provider/raw/master/docs/img/wechat.png)
 
 
