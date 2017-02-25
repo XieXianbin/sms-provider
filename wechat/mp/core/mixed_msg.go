@@ -56,15 +56,12 @@ type MixedMsg struct {
 		LocationY float64 `xml:"Location_Y" json:"Location_Y"`
 		Scale     int     `xml:"Scale"      json:"Scale"`
 		Label     string  `xml:"Label"      json:"Label"`
-		PoiName   string  `xml:"Poiname"    json:"Poiname"`
 	} `xml:"SendLocationInfo,omitempty" json:"SendLocationInfo,omitempty"`
 
 	MsgID    int64  `xml:"MsgID"  json:"MsgID"`  // template, mass
 	Status   string `xml:"Status" json:"Status"` // template, mass
 	*mass           // mass
 	*account        // account
-	*dkf            // dkf
-	*poi            // poi
 
 	// shakearound
 	ChosenBeacon *struct {
@@ -94,18 +91,5 @@ type account struct {
 	ExpiredTime int64  `xml:"ExpiredTime" json:"ExpiredTime"`
 	FailTime    int64  `xml:"FailTime"    json:"FailTime"`
 	FailReason  string `xml:"FailReason"  json:"FailReason"`
-}
-
-type dkf struct {
-	KfAccount     string `xml:"KfAccount"     json:"KfAccount"`
-	FromKfAccount string `xml:"FromKfAccount" json:"FromKfAccount"`
-	ToKfAccount   string `xml:"ToKfAccount"   json:"ToKfAccount"`
-}
-
-type poi struct {
-	UniqId string `xml:"UniqId" json:"UniqId"`
-	PoiId  int64  `xml:"PoiId"  json:"PoiId"`
-	Result string `xml:"Result" json:"Result"`
-	Msg    string `xml:"Msg"    json:"Msg"`
 }
 

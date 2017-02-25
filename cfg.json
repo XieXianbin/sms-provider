@@ -5,17 +5,21 @@
 		"token": ""
 	},
 	"sms": {
-	    "provider": "alidayu",
-		"appkey": "23589572",
-		"appsecret": "b0660bff18a63f6e3c57b5ecd9766cec",
-		"smstemplatecode": "SMS_48695032",
-		"smsfreesignname": ""
+	    "provider": "aliyun",
+		"appkey": "WaNuxua3Id7UjpWL",
+		"appsecret": "40WQ82vu6G364Le0ZLKZmueChUJxKO",
+		"smstemplatecode": "SMS_48825019",
+		"smssignname": "谢先斌博客"
 	},
 	"smtp": {
         "addr": "smtp.ym.163.com:25",
         "username": "8@jcloud.xyz",
         "password": "WRDwrd3e",
         "from": "8@jcloud.xyz"
+	},
+	"wechat": {
+        "appid": "wx9ffb5fe195d6a98d",
+        "appsecret": "fba3a7ad2a2d5abe9a4e04c875a0c779",
+        "templateid": "IJldjH11vTrcaKAwJ2RaGARWuPwA4gLO91b7VZL6n6Q"
 	}
-
 }

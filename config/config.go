@@ -19,7 +19,7 @@ type SmsConfig struct {
 	Appkey          string `json:"appkey"`
 	Appsecret       string `json:"appsecret"`
 	Smstemplatecode string `json:"smstemplatecode"`
-	Smsfreesignname string `json:"smsfreesignname"`
+	Smssignname     string `json:"smssignname"`
 }
 
 type SmtpConfig struct {
@@ -29,11 +29,18 @@ type SmtpConfig struct {
 	From     string `json:"from"`
 }
 
+type WechatConfig struct {
+	Appid      string `json:"appid"`
+	Appsecret  string `json:"appsecret"`
+	Templateid string `json:"templateid"`
+}
+
 type GlobalConfig struct {
-	Debug bool        `json:"debug"`
-	Http  *HttpConfig `json:"http"`
-	Sms   *SmsConfig  `json:"sms"`
-	Smtp  *SmtpConfig `json:"smtp"`
+	Debug  bool          `json:"debug"`
+	Http   *HttpConfig   `json:"http"`
+	Sms    *SmsConfig    `json:"sms"`
+	Smtp   *SmtpConfig   `json:"smtp"`
+	Wechat *WechatConfig `json:"wechat"`
 }
 
 var (

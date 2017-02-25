@@ -17,10 +17,9 @@ import (
 	"unicode"
 	"unsafe"
 
-	"github.com/chanxuehong/util/security"
-
 	"github.com/XieXianbin/msg-provider/wechat/internal/debug/callback"
 	"github.com/XieXianbin/msg-provider/wechat/internal/util"
+	"github.com/XieXianbin/msg-provider/utils/security"
 )
 
 // Server 用于处理微信服务器的回调请求, 并发安全!

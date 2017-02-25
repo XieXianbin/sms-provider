@@ -1,15 +1,11 @@
 # wechat SDK for golang
-此为v2版本, v1请移步到 https://github.com/chanxuehong/wechat
+[源码](https://github.com/chanxuehong/wechat.v2)
 
 ## 简介
 | 模块  | 描述                     |
 |-----:|:-------------------------|
 | mp   | 微信公众平台 SDK           |
 
-
-
-## 联系方式
-QQ群: 297489459
 
 ## 文档
 代码下载下来后，放入 GOPATH 路径的 src 下面，可以在shell(windows 下面是 cmd) 里运行
